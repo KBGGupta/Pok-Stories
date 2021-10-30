@@ -1,0 +1,134 @@
+﻿*{
+margin: 0;
+
+font-family: century gothic;
+}
+
+body {
+background-color: yellow;
+}
+
+
+h1 {
+margin-left: 20%;
+}
+
+header{
+Padding: 50px;
+background-color: blue;
+font-size: 60px;
+	color: yellow;
+}
+
+.nav ul{
+float: right;
+size-style-type: none;
+margin-top: -35px;
+margin-right: 50px;
+}
+
+.nav ul li {
+display: inline-block;
+font-size: 20px;
+}
+
+.nav ul li a {
+text-decoration: none;
+background-color:skyblue;
+color: white;
+padding:10px 20px;
+border: 1px solid red;
+transition: 0.6s ease;
+}
+.nav ul li a:hover{
+background-color:white;
+color: black;
+}
+
+.nav ul li.active a{
+background-color:white;
+color: black;
+}
+
+.logo img{
+float: left;
+width: 139px;
+height: auto;
+border: 5px solid yellow;
+margin-left: 50px;
+}
+
+
+.text-box{
+width: 70%;
+color: black;
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+.text-box h2{
+font-size: 50px;
+}
+
+.text-box p{
+margin: 10px 0 40px;
+font-size: 14px;
+color: Black;
+}
+
+.head2 {
+font-size: 40pt;
+text-align: center;
+text-decoration: underline;
+}
+
+article {
+text-align: center;
+}
+
+figure {
+padding: 20px;
+}
+
+
+.add {
+background-color: white;
+height: 150px;
+color: royalblue;
+text-align: center;
+background-size: cover;
+background-position: center;
+margin-top: 25%;
+padding: 20px;
+}
+
+
+
+.social {
+display: inline-block;
+float: right;
+size-style-type: none;
+margin-top: 0px;
+margin-left: 0%;
+padding:10px 20px;
+font-size: 20px;
+}
+
+.screen {
+ position: absolute;
+ height: 1px;
+ width: 1px;
+ clip: rect(1px 1px 1px 1px); // IE 6 and 7
+ clip: rect(1px,1px,1px,1px);
+ clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+ -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+ overflow: hidden !important;
+ }
+
+
+
+
+
+
