@@ -1,0 +1,62 @@
+<doctype html>
+<head>
+<title>News letter|PokéStories</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width", initial-scale=1">
+<style>
+h1, h2 {
+text-transform: capitalize;
+}
+body {
+background-color: lightgreen;
+color: blue;
+text-align: center;
+border: solid 2px black;
+}
+[role="alert"] {
+padding: 10px;
+border: 2px solid blue;
+border-radius: 4px;
+background-color: pink;
+}
+[role="alert"]:empty {
+display: none;
+}
+</style>
+<script>
+window.addEventListener('load', function () {
+var button = document.getElementById('alert-trigger');
+button.addEventListener('click', addAlert);
+});
+
+function addAlert (event) {
+var example = document.getElementById('example');
+var template = document.getElementById('alert-template').innerHTML;
+
+example.innerHTML = template;
+}
+</script>
+</head>
+<body>
+<h1>get breaking news of our Best pokémon Stories In your inbox</h1>
+<h2>Note all mandatory fields are mark with asterisk "*"</h2>
+
+<form>
+<label for="first">First Name: *</label>
+<input id="first" name="first" type="text" aria-required="true"> <hr>
+
+<label for="Last">Last Name: *</label>
+<input id="Last" name="Last" type="text" aria-required="true"> <hr>
+
+<label for="mail">Your Email-ID *</label>
+<input id="mail" name="mail" type="email" aria-required="true" placeholder="Enter your E-mail ID">  <hr>
+
+<input type="button" id="alert-trigger" value="Subscribe Now"/>
+<div id="example" role="alert"></div>
+<script type="text/template" id="alert-template">
+<p>You are successfully subscribe for the update of PokéStories News letter</p>
+<input type="button" onclick="window.location.href='index.html';" value="Ok"/>
+
+</form>
+</body>
+</html>
